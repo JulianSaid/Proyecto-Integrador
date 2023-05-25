@@ -1,0 +1,22 @@
+@media(max-width:576px) {
+.navbar-list {
+    background: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.navbar i {
+display: block;
+}
+
+#toggle-menu:checked ~ .navbar-list {
+    display: flex;
+}
+
+}
