@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mediaqueris.css">
     <link rel="stylesheet" href="./animaciones.css">
@@ -13,33 +16,24 @@
 </head>
 
 <header id="header">
-<nav>
-    <!-- LOGO -->
-    <img src="./camisetas/CAMISETA.png" alt="Logo tienda" class="logoTienda">
+    <!-- NAVBAR PRIMARY -->
+    <nav class="navbar-primary">
+        <!-- LOGO -->
+        <img src="./camisetas/CAMISETA.png" alt="Logo tienda" class="logoTienda">
 
-<input type="search" value="Buscar 🔍" >
+        <!-- BUSCADOR -->
+        <input type="search" placeholder="BUSCAR 🔍" class="buscador">
 
-</nav>
-    <nav class="navbar">
+        <div class="contact-carrito">
 
-        <!-- MENU -->
-        <label for="toggle-menu"><i class="menu fa-sharp fa-solid fa-bars"></i></label>
-        <input type="checkbox" id="toggle-menu">
-
+            <a href="./contacto.html" target="_blank"><i class="contact-i fa-solid fa-user"></i></a>
 
 
-        <ul class="navbar-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+            <!-- CARRITO -->
+            <label for="cart-toggle"><i class="carrito fa-solid fa-cart-shopping"></i></label>
+            <input type="checkbox" id="cart-toggle">
 
-        <!-- CARRITO -->
-        <label for="cart-toggle"><i class="carrito fa-solid fa-cart-shopping"></i></label>
-        <input type="checkbox" id="cart-toggle">
-
-        <ul class="list-cart">
+            <ul class="list-cart">
 
                 <li class="item-carrito">
                     <img src="./camisetas/CamisetaColonTitular.png" alt="Camiseta Colon">
@@ -70,13 +64,42 @@
                 </li>
 
                 <span class="button-comprar">COMPRAR</span>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NAVBAR SECONDARY -->
+
+    <nav class="navbar">
+
+        <!-- MENU -->
+        <label for="toggle-menu"><i class="menu fa-sharp fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu">
+
+
+
+        <ul class="navbar-list">
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Marcas</a></li>
         </ul>
+
 
     </nav>
 
 </header>
 
 <body>
+
+    <section class="slider">
+        <ul>
+            <li><img src="./camisetas/Img abajo nav/imgnavbajo.jpg" alt=""></li>
+            <li><img src="./camisetas/Img abajo nav/imgbajonav.jpg" alt=""></li>
+            <li><img src="./camisetas/Img abajo nav/imgabajonav2.jpg" alt=""></li>
+        </ul>
+    </section>
+
 
 </body>
 
