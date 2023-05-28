@@ -7,13 +7,13 @@
 
     .navbar-list {
         background: rgb(236, 11, 11);
-        height: calc(50vh - 80px);
-        width: 60%;
+        height: calc(100vh - 80px);
+        width: 80%;
         position: absolute;
         top: 80px;
         left: 0;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
         border-radius: 0 0 1rem ;
         overflow: scroll;
@@ -25,10 +25,16 @@
         display: block;
     }
 
-    #toggle-menu:checked~.navbar-list {
+    #toggle-menu:checked ~ .navbar-list {
         display: flex;
     }
 
+    /* #header img {
+        display: none;
+    } */
+/* .item-carrito {
+    overflow: scroll;
+} */
 
 }
 

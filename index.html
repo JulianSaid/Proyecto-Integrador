@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mediaqueris.css">
-    <title>Proyecto Integrador</title>
+    <link rel="stylesheet" href="./animaciones.css">
+    <title>Camiseta</title>
 </head>
 
 <header id="header">
+<nav>
+    <!-- LOGO -->
+    <img src="./camisetas/CAMISETA.png" alt="Logo tienda" class="logoTienda">
+
+<input type="search" value="Buscar 🔍" >
+
+</nav>
     <nav class="navbar">
 
+        <!-- MENU -->
         <label for="toggle-menu"><i class="menu fa-sharp fa-solid fa-bars"></i></label>
         <input type="checkbox" id="toggle-menu">
 
-        <img src="./camisetas/loog-tienda-removebg-preview.png" alt="Logo tienda" class="logoTienda">
 
-       
+
         <ul class="navbar-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Productos</a></li>
@@ -27,9 +35,42 @@
             <li><a href="#">Contacto</a></li>
         </ul>
 
+        <!-- CARRITO -->
         <label for="cart-toggle"><i class="carrito fa-solid fa-cart-shopping"></i></label>
         <input type="checkbox" id="cart-toggle">
 
+        <ul class="list-cart">
+
+                <li class="item-carrito">
+                    <img src="./camisetas/CamisetaColonTitular.png" alt="Camiseta Colon">
+                    <div class="cart-suma-resta">
+                        <span class="button">-</span>
+                        <span>1</span>
+                        <span class="button">+</span>
+                    </div>
+                </li>
+
+                <li class="item-carrito">
+                    <img src="./camisetas/CamisetaAlternativaColon.png" alt="Camiseta Colon">
+                    <div class="cart-suma-resta">
+                        <span class="button">-</span>
+                        <span>1</span>
+                        <span class="button">+</span>
+                    </div>
+                </li>
+
+                <li class="item-carrito">
+                    <img src="./camisetas/CamisetaUnionTitular.png" alt="Camiseta Colon">
+                    <div class="cart-suma-resta">
+                        <span class="button">-</span>
+                        <span>1</span>
+                        <span class="button">+</span>
+                    </div>
+
+                </li>
+
+                <span class="button-comprar">COMPRAR</span>
+        </ul>
 
     </nav>
 
